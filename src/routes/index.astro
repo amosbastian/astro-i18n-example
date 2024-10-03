@@ -1,0 +1,13 @@
+---
+import { t, getLocale} from "i18n:astro";
+import Layout from "../layouts/Layout.astro";
+
+const locale = getLocale()
+---
+
+<Layout>
+  <div>
+    <div>Locale: {locale}</div>
+    <div>Message: {t("hello")}</div>
+  </div>
+</Layout>
